@@ -197,6 +197,16 @@ bool Fraction::operator==(const Fraction& F) const
 	return numerator * F.denominator == F.numerator * denominator;
 }
 
+bool Fraction::operator<=(const Fraction& F) const
+{
+	return numerator * F.denominator <= F.numerator * denominator;
+}
+
+bool Fraction::operator>=(const Fraction& F) const
+{
+	return numerator * F.denominator >= F.numerator * denominator;
+}
+
 bool Fraction::operator<(const Fraction& F) const
 {
 	return numerator * F.denominator < F.numerator * denominator;

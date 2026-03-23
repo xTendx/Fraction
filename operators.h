@@ -50,6 +50,8 @@ public:
 	//=========================================================================================================================================
 
 	bool operator==(const Fraction& F) const;
+	bool operator<=(const Fraction& F) const;
+	bool operator>=(const Fraction& F) const;
 	bool operator<(const Fraction& F) const;
 	bool operator>(const Fraction& F) const;
 
@@ -76,10 +78,10 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const Fraction& F);
 	friend std::istream& operator>>(std::istream& is, Fraction& F);
 	//===========================================================================================
-	Fraction operator%(int x) const;
+	Fraction operator%(int x) const;f
 };
 
-
+//new update
 //<< >> ++ -- +=
 
 
